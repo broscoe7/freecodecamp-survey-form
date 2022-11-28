@@ -5,12 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hogwarts Survey</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1 id="title">Hogwarts Online Course Survey Form</h1>
-  <p id="description">Thank-you for taking the time to help us improve our new online course offerings.</p>
+  <header>
+    <h1 id="title">Hogwarts Online Course Survey Form</h1>
+    <p id="description">Thank-you for taking the time to help us improve our new online course offerings.</p>
+  </header>
   <form id="survey-form">
-    <fieldset>
+    <fieldset class="personal-info">
       <label for="name" id="name-label">Name</label>
         <input type="text" id="name" name="name" required placeholder="Enter your name" />
       <label for="email" id="email-label">Email</label>
@@ -26,14 +29,11 @@
           <option value="4">Slytherin</option>
         </select>
     </fieldset>
-    <fieldset>
+    <fieldset class="feedback">
       <p>Would you recommend Hogwarts online courses to a friend?</p>
-        <input id="definitely" name="recommendation" value="definitely" type="radio" />
-        <label for="definitely">Definitely</label>
-        <input id="maybe" name="recommendation" value="maybe" type="radio" />
-        <label for="maybe">Maybe</label>
-        <input id="unsure" name="recommendation" value="unsure" type="radio" />
-        <label for="unsure">Not Sure</label>
+      <label for="definitely"><input id="definitely" name="recommendation" value="definitely" type="radio" />  Definitely</label>
+        <label for="maybe"><input id="maybe" name="recommendation" value="maybe" type="radio" />  Maybe</label>
+        <label for="unsure"><input id="unsure" name="recommendation" value="unsure" type="radio" />  Not Sure</label>
       <label for="dropdown">What is your favourite feature of Hogwarts online courses?</label>
         <select id="dropdown" name="favfeature">
           <option value="">Select an option</option>
@@ -43,20 +43,15 @@
           <option value="4">Professors</option>
         </select>
       <label for="improvements">What would you like to see improved?</label>
-        <input id="assignments" name="improvements" value="assignments" type="checkbox" />
-        <label for="assignments">Assignments</label>
-        <input id="videos" name="improvements" value="videos" type="checkbox" />
-        <label for="videos">Videos</label>
-        <input id="forums" name="improvements" value="forums" type="checkbox" />
-        <label for="forums">Discussion Forums</label>
-        <input id="itsupport" name="improvements" value="itsupport" type="checkbox" />
-        <label for="itsupport">IT Support</label>
-        <input id="othercourses" name="improvements" value="morecourses" type="checkbox" />
-        <label for="othercourses">Additional Courses</label>
+        <label for="assignments"><input id="assignments" name="improvements" value="assignments" type="checkbox" />  Assignments</label>
+        <label for="videos"><input id="videos" name="improvements" value="videos" type="checkbox" />  Videos</label>
+        <label for="forums"><input id="forums" name="improvements" value="forums" type="checkbox" />  Discussion Forums</label>
+        <label for="itsupport"><input id="itsupport" name="improvements" value="itsupport" type="checkbox" />  IT Support</label>
+        <label for="othercourses"><input id="othercourses" name="improvements" value="morecourses" type="checkbox" />  Additional Courses</label>
       <label for="comments">Any comments or suggestions?</label>
-        <textarea id="comments" name="comments"></textarea>
+        <textarea id="comments" name="comments" rows="10" col="100%"></textarea>
     </fieldset>
-    <input type="submit" id="submit" value="submit">
+    <input type="submit" id="submit" value="Submit">
   </form>
 </body>
 </html>
