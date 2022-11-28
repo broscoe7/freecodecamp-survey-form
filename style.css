@@ -1,0 +1,58 @@
+body {
+  background-color:rgb(76, 27, 101);
+  font-family: Tahoma;
+  font-size: 17px;
+  color: gold;
+  border: solid gold;
+}
+
+#title, #description {
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border-style: none;
+}
+
+.personal-info label {
+  display: block;
+  margin: 20px 0 0.4rem 0;
+}
+
+.feedback label {
+  display: block;
+  margin: 20px 0 0.4rem 0;
+}
+
+.feedback select {
+  margin: 0;
+}
+
+input[type="text"], input[type="number"], input[type="email"], textarea {
+  background-color:rgb(30, 10, 39);
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 55%;
+  min-width: 300px;
+  margin: 1em auto;
+  font-size: 1.1rem;
+  background-color:rgb(37, 13, 49);
+  border-color: gold;
+  color: gold;
+  padding: 10px;
+}
+
