@@ -4,6 +4,9 @@ body {
   font-size: 17px;
   color: gold;
   border: solid gold;
+  background-image: url(castle-background.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 #title, #description {
@@ -12,10 +15,10 @@ body {
 
 form {
   width: 60vw;
-  max-width: 600px;
-  min-width: 300px;
+  max-width: 650px;
   margin: 0 auto;
-  padding-bottom: 2em;
+  padding: 2rem 3rem;
+  background-color:rgb(76, 27, 101);
 }
 
 fieldset {
